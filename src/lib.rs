@@ -275,7 +275,7 @@ impl KvsEngine for KvStore {
                 }
                 // return results
             }
-            Command::Rm {key} => {
+            Command::Rm { key } => {
                 println!("{} already marked for removal.", key);
                 Ok(())
             }
