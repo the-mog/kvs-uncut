@@ -1,0 +1,5 @@
+target/
+kvs-server/target/
+kvs-client/target/
+
+.idea/

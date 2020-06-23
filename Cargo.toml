@@ -1,0 +1,32 @@
+[package]
+name = "kvs"
+version = "0.1.0"
+authors = ["hans <themog@tari.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.0.0-beta.1", features = ["yaml"] }
+cargo-edit = "0.6.0"
+failure = "0.1.8"
+failure_derive = "0.1.8"
+serde = { version = "1.0.113", features = ["derive"] }
+serde_derive ="1.0.113"
+toml = "0.5.6"
+serde_json = "1.0.55"
+simplelog = "0.8.0"
+log = "0.4.8"
+memmap = "0.7.0"
+
+[dev-dependencies]
+assert_cmd = "0.11.0"
+predicates = "1.0.0"
+tempfile = "3.0.7"
+walkdir = "2.2.7"
+
+# [[bin]]
+# name = "kvs"
+# path = "./src/bin/kvs.rs"
+
+

@@ -1,0 +1,18 @@
+[package]
+name = "kvs-server"
+version = "0.1.0"
+authors = ["hans <themog@tari.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3"
+serde = { version = "1.0.113", features = ["derive"] }
+serde_derive ="1.0.113"
+toml = "0.5.6"
+serde_json = "1.0.55"
+simplelog = "0.8.0"
+log = "0.4.8"
+
+kvs = {path = "../"}

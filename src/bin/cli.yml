@@ -1,0 +1,36 @@
+name: kvs
+version: "1.0"
+author: nathi
+about: Create a simple in-memory key/value store
+
+subcommands:
+    - set:
+        about: Set the key and value i.e cargo run -- set <key> <value>
+        version: "0.0.1"
+        takes_value: true
+        args:
+          - key:
+              short: k
+              help: key please
+              takes_value: true
+              index: 0
+        args:
+          - value:
+              short: v
+              help: value please
+              takes_value: true
+              index: 1   
+    - get:
+        about: Get the string value from key
+        version: "0.0.1"
+        takes_value: true
+        help: <key> 
+    - del:
+        about: Removes a given key
+        version: "0.0.1"
+        takes_value: true
+        help: <key> <value>
+
+        
+
+    
